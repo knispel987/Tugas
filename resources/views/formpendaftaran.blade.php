@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Daftar Mahasiswa</title>
-    <link rel="stylesheet" href="/css/app.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <div class="relative overflow-hidden mb-8">
@@ -27,31 +27,29 @@
                     <div class="flex flex-col items-start align-top justify-start text-left mb-2,5">
                         <label class="block text-sm font-medium text-indigo-700" for="jenis_kelamin">Jenis Kelamin: </label>
                         <div class="mb-2">
-                            <input type="radio" id="perempuan" name="jenis_kelamin"/>
+                            <input type="radio" id="perempuan" value="P"name="jenis_kelamin"/>
                             <label for="perempuan">Perempuan</label>
-                            <input type="radio" id="lakilaki" name="jenis_kelamin"/>
+                            <input type="radio" id="lakilaki" value="L"name="jenis_kelamin"/>
                             <label for="laki_laki">Laki-Laki</label>
                         </div>
                     </div>
                     <div class="flex flex-col items-start align-top justify-start text-left mb-6">
                         <input class="border border-indigo-300 px-2 rounded-lg shadow-sm"type="email" name="email" placeholder="E-mail Anda">
                     </div>
-                    <div class="appearance-none flex flex-col items-start align-top justify-start text-left mb-6">
+                    <div class="apperance-none flex flex-col items-start align-top justify-start text-left mb-6">
                         <input class="border border-indigo-300 px-2 rounded-lg shadow-sm" type="number" name="nomor_telpon" placeholder="Nomor Telpon"/>
                     </div>
-                    <div class="mb-6">
+                    <div class="apperance-none mb-6">
                         <textarea name="alamat" id="alamat" rows="5" class="block p-2,5 text-sm bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 w-full" placeholder="Alamat Anda"></textarea>
                     </div>
-                    <div class="mb-6">
+                    <div class="apperance-none mb-6">
                         <input class="mb-6 block p-2,5 text-sm bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 w-full" type="number" placeholder="Kode Pos" name="kode_pos"/>
                     </div>
                     <div>
-                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white 
-                            font-bold py-2 px-4 border border-blue-700 rounded">
+                    <button type="submit" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
                         Daftar
                     </button>
-                    <button type="reset" class="bg-gray-500 hover:bg-blue-700 text-white 
-                            font-bold py-2 px-4 border border-blue-700 rounded">
+                    <button type="reset" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
                         Reset
                     </button>
                 </div>
